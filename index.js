@@ -13,17 +13,17 @@ bot.on('message', (message)=>{
     var msg = message.content.toUpperCase();
 
     //ping-pong commands
-    if(msg =='ping'){
+    if(msg === 'ping'){
         message.reply('pong')//send pong
     }
 
-    if(msg =='k.clear'){
+    if(msg === 'k.clear'){
         message.reply('how many do you want to delete?');
         message.delete(message.content.toUpperCase());
         message.channel.send('message cleared!');
     }
 
-    if(msg == 'k.join'){
+    if(msg === 'k.join'){
         if(message.member.voiceChannel){
             message.member.voiceChannel.join().then(connection =>{
                 message.reply('successfully connected to the Channel!');
@@ -34,11 +34,10 @@ bot.on('message', (message)=>{
         }
     }
 
-    if(msg == 'k.help') {
+    if(msg === 'k.help') {
         const embed = new RichEmbed()
             .setTitle('Show commands')
             .setColor(0xFF0000)
-            .setDescription
     }
     
 });
@@ -51,5 +50,5 @@ bot.on('guildMemberAdd', member => {
 
 
 //login
-access_token = process.env["TOKEN"]
-bot.login(access_token);
+acces_token = process.env["TOKEN"]
+bot.login(acces_token);
