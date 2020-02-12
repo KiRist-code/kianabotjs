@@ -51,5 +51,5 @@ bot.on('guildMemberAdd', member => {
 
 
 //login
-acces_token = process.env["TOKEN"]
-bot.login(acces_token);
+access_token = process.env["TOKEN"]
+bot.login(access_token);
