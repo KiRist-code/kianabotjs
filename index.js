@@ -115,7 +115,7 @@ bot.on('message', (message)=>{
     }
   }
   
-    
+    }
 });
 
 bot.on('guildMemberAdd', member => {
